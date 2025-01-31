@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef2f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: #ffe259 !important;
+}
+
+/* Hero Section */
+#home {
+    background: url('https://via.placeholder.com/1500x800?text=College+Event+Banner') no-repeat center center/cover;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 150px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Carousel */
+.carousel-inner img {
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+}
+.carousel-inner img:hover {
+    transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+    background: white;
+    padding: 80px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Schedule Table */
+.table {
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+th {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+}
+
+/* Gallery */
+#gallery img {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Form */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+input, textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+.btn-primary:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+.uploaded-photo {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+
+.uploaded-photo:hover {
+    transform: scale(1.1);
+}
